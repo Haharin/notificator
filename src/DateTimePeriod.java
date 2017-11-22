@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 
 public class DateTimePeriod {
 
-    private LocalDateTime startDateTime;
+    private LocalDateTime zstartDateTime;
     private LocalDateTime endDateTime;
 
     public DateTimePeriod() {

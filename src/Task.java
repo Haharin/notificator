@@ -1,9 +1,8 @@
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class Task {
 
-//    private User ownerUser;
+    private User ownerUser;
 
     private String name;
     private LocalDateTime startDateTime;
@@ -14,13 +13,13 @@ public class Task {
     public Task() {
     }
 
-//    public User getOwnerUser() {
-//        return ownerUser;
-//    }
+    public User getOwnerUser() {
+        return ownerUser;
+    }
 
-//    public void setOwnerUser(User ownerUser) {
-//        this.ownerUser = ownerUser;
-//    }
+    public void setOwnerUser(User ownerUser) {
+        this.ownerUser = ownerUser;
+    }
 
     public String getName() {
         return name;
@@ -65,8 +64,8 @@ public class Task {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Task{");
-//        sb.append("ownerUser=").append(ownerUser);
-        sb.append("name='").append(name).append('\'');
+        sb.append("ownerUser=").append(ownerUser);
+        sb.append(", name='").append(name).append('\'');
         sb.append(", startDateTime=").append(startDateTime);
         sb.append(", endDateTime=").append(endDateTime);
         sb.append(", notificationDateTime=").append(notificationDateTime);
